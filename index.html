@@ -1339,8 +1339,8 @@ a {
 
 .card-title {
   font-family: "Leitura News", Georgia, Cambria, "Times New Roman", Times, serif;
-  font-size: 1.15rem;
-  line-height: 1.375;
+  font-size: 1.3rem;
+  line-height: 1.2;
   --tw-text-opacity: 1;
   color: rgb(2 3 34 / var(--tw-text-opacity, 1));
 }
@@ -1371,11 +1371,17 @@ a {
 }
 
 .section-head h2 {
-  font-size: 1.5rem;
-  line-height: 1.2;
-  font-weight: 700;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.15;
   --tw-text-opacity: 1;
   color: rgb(2 3 34 / var(--tw-text-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .section-head h2 {
+    font-size: 2rem;
+  }
 }
 
 /* Chips / filters */
@@ -2087,6 +2093,10 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -2137,6 +2147,10 @@ a {
 
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
 }
 
 .mt-8 {
@@ -2522,6 +2536,11 @@ a {
        column-gap: 1.25rem;
 }
 
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
 .gap-y-1 {
   row-gap: 0.25rem;
 }
@@ -2762,9 +2781,18 @@ a {
   background-position: center;
 }
 
+.bg-top {
+  background-position: top;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-top {
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-0 {
@@ -2869,6 +2897,11 @@ a {
   padding-bottom: 3.5rem;
 }
 
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2908,6 +2941,10 @@ a {
   padding-bottom: 0.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -2926,6 +2963,10 @@ a {
 
 .pt-12 {
   padding-top: 3rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-2 {
@@ -3057,6 +3098,10 @@ a {
   font-style: italic;
 }
 
+.leading-\[1\.08\] {
+  line-height: 1.08;
+}
+
 .leading-\[1\.12\] {
   line-height: 1.12;
 }
@@ -3077,8 +3122,16 @@ a {
   letter-spacing: 0.14em;
 }
 
+.tracking-\[0\.16em\] {
+  letter-spacing: 0.16em;
+}
+
 .tracking-\[0\.22em\] {
   letter-spacing: 0.22em;
+}
+
+.tracking-\[0\.24em\] {
+  letter-spacing: 0.24em;
 }
 
 .tracking-tight {
@@ -3420,6 +3473,11 @@ a {
     padding-bottom: 3.5rem;
   }
 
+  .md\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .md\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -3430,8 +3488,17 @@ a {
     line-height: 1;
   }
 
+  .md\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
   .md\:text-\[2\.6rem\] {
     font-size: 2.6rem;
+  }
+
+  .md\:text-\[3\.25rem\] {
+    font-size: 3.25rem;
   }
 
   .md\:text-h1 {
@@ -3451,6 +3518,10 @@ a {
 
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:gap-14 {
+    gap: 3.5rem;
   }
 }
 
@@ -3916,7 +3987,7 @@ html{scroll-behavior:smooth}
       <div id="grid"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-multi-omics-exposome-mini-symposium" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-20">May 20, 2025</time></div>
@@ -3927,7 +3998,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-britta-will-gottesman-institute-director" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-19">May 19, 2025</time></div>
@@ -3975,7 +4046,7 @@ html{scroll-behavior:smooth}
       <div id="grid"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-2025-pilot-project-awardees" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-15">May 15, 2025</time></div>
@@ -3986,7 +4057,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-steidl-horwitz-faculty-prize" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-06">May 6, 2025</time></div>
@@ -3997,7 +4068,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aguirre-ghiso-cancer-warrior-award" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-02">May 2, 2025</time></div>
@@ -4045,7 +4116,7 @@ html{scroll-behavior:smooth}
       <div id="grid"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-asbrs-2025-breast-surgery" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-04">May 4, 2025</time></div>
@@ -4056,7 +4127,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aacr-2025-annual-meeting" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-30">April 30, 2025</time></div>
@@ -4067,7 +4138,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-drug-discovery-chemistry-2025" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-17">April 17, 2025</time></div>
@@ -4078,7 +4149,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-ons-congress-2025-nursing" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-13">April 13, 2025</time></div>
@@ -4269,7 +4340,7 @@ html{scroll-behavior:smooth}
       <div id="grid"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-fast-clinic-lung-nodule-follow-up" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-spotlight" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 3.8-2.5 5-.6.7-.5 1.5-.5 2h-6c0-.5.1-1.3-.5-2C7.5 12.8 6 11.5 6 9a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg><span>Spotlight</span></a><time class="text-xs text-ink-soft" datetime="2025-05-22">May 22, 2025</time></div>
@@ -4517,7 +4588,7 @@ html{scroll-behavior:smooth}
       <div id="grid"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-bold-interns-2025-cohort" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-in-our-community" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 20v-1a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v1M14 20v-1a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v1"/></svg><span>In Our Community</span></a><time class="text-xs text-ink-soft" datetime="2025-05-25">May 25, 2025</time></div>
@@ -4653,7 +4724,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Multi-omics and Exposome Mini Symposium draws global leaders to the Bronx</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">More than 40 MECCC faculty, fellows, students and staff explored the “missing link between genes and health” at a Cancer Epidemiology, Prevention &amp; Control program symposium.</p>
         <p class="mt-4 text-sm text-ink-soft">May 20, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div><figcaption class="mt-2 text-xs italic text-ink-soft">H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div><figcaption class="mt-2 text-xs italic text-ink-soft">H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -4684,7 +4755,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-britta-will-gottesman-institute-director" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-19">May 19, 2025</time></div>
@@ -4722,7 +4793,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Britta Will, PhD, named director of Einstein's Gottesman Institute for Stem Cell Biology</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">A senior MECCC member and Co-Leader of the Stem Cell &amp; Cancer Biology Program, Dr. Will takes the helm of the Gottesman Institute from interim director Dr. Ulrich Steidl.</p>
         <p class="mt-4 text-sm text-ink-soft">May 19, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg1" role="img" aria-label="Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Britta Will, PhD, Associate Professor of Cell Biology and Oncology and the Diane and Arthur B. Belfer Faculty Scholar in Cancer Research.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -4750,7 +4821,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-multi-omics-exposome-mini-symposium" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-20">May 20, 2025</time></div>
@@ -4788,7 +4859,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Congratulations to our first round of 2025 Pilot Project awardees</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">MECCC leadership announces the teams awarded one-year Cancer Epidemiology, Prevention &amp; Control and Cancer Center Support Grant Team Science pilot grants.</p>
         <p class="mt-4 text-sm text-ink-soft">May 15, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -4816,7 +4887,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-steidl-horwitz-faculty-prize" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-06">May 6, 2025</time></div>
@@ -4827,7 +4898,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aguirre-ghiso-cancer-warrior-award" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-02">May 2, 2025</time></div>
@@ -4865,7 +4936,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Dr. Steidl honored with 14th Annual Marshall S. Horwitz, MD, Faculty Prize for Research Excellence</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">MECCC Deputy Director Ulrich G. Steidl, MD, PhD, delivered the keynote lecture at a May 6 ceremony on the Einstein campus.</p>
         <p class="mt-4 text-sm text-ink-soft">May 6, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover  bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -4893,7 +4964,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-2025-pilot-project-awardees" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-15">May 15, 2025</time></div>
@@ -4904,7 +4975,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aguirre-ghiso-cancer-warrior-award" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-02">May 2, 2025</time></div>
@@ -4942,7 +5013,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Dr. Aguirre-Ghiso receives University of Colorado Comprehensive Cancer Center “Cancer Warrior Award”</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">The award recognizes outstanding contributions to cancer research and devotion to training the next generation.</p>
         <p class="mt-4 text-sm text-ink-soft">May 2, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -4969,7 +5040,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-2025-pilot-project-awardees" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-15">May 15, 2025</time></div>
@@ -4980,7 +5051,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-steidl-horwitz-faculty-prize" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-06">May 6, 2025</time></div>
@@ -5018,7 +5089,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">MECCC breast-surgery research featured at the American Society of Breast Surgeons Annual Meeting</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">MECCC physicians, fellows, and staff presented a “Quick Shot” talk and six poster abstracts in Las Vegas.</p>
         <p class="mt-4 text-sm text-ink-soft">May 4, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5046,7 +5117,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-aacr-2025-annual-meeting" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-30">April 30, 2025</time></div>
@@ -5057,7 +5128,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-drug-discovery-chemistry-2025" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-17">April 17, 2025</time></div>
@@ -5068,7 +5139,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-ons-congress-2025-nursing" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-13">April 13, 2025</time></div>
@@ -5106,7 +5177,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">MECCC at AACR 2025: a press-release-highlighted study on cancer-related fatigue and QoL</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">Simo Du, MD, MHS, had a poster on sex disparities in cancer-related fatigue and depression selected for an AACR press release.</p>
         <p class="mt-4 text-sm text-ink-soft">April 30, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5136,7 +5207,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-asbrs-2025-breast-surgery" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-04">May 4, 2025</time></div>
@@ -5147,7 +5218,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-drug-discovery-chemistry-2025" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-17">April 17, 2025</time></div>
@@ -5158,7 +5229,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-ons-congress-2025-nursing" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-13">April 13, 2025</time></div>
@@ -5196,7 +5267,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">Dr. Gavathiotis presents allosteric drug-discovery work at Drug Discovery Chemistry</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">MECCC's Cancer Therapeutics co-leader spoke on targeting BCL-2 family proteins in San Diego.</p>
         <p class="mt-4 text-sm text-ink-soft">April 17, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-top pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5223,7 +5294,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-asbrs-2025-breast-surgery" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-04">May 4, 2025</time></div>
@@ -5234,7 +5305,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aacr-2025-annual-meeting" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-30">April 30, 2025</time></div>
@@ -5245,7 +5316,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-ons-congress-2025-nursing" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-13">April 13, 2025</time></div>
@@ -5283,7 +5354,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">MECCC nurses present “Essentials of Oncology Course” at the 50th ONS Congress</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">A nursing-education initiative to build confidence among novice oncology nurses, presented in Denver.</p>
         <p class="mt-4 text-sm text-ink-soft">April 13, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div><figcaption class="mt-2 text-xs italic text-ink-soft">Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover  bg-center pbg8" role="img" aria-label="Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”"></div><figcaption class="mt-2 text-xs italic text-ink-soft">Montefiore Einstein nurses celebrating the journey to Magnet — the nursing “gold standard.”</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5310,7 +5381,7 @@ html{scroll-behavior:smooth}
       <div class="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-asbrs-2025-breast-surgery" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-04">May 4, 2025</time></div>
@@ -5321,7 +5392,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aacr-2025-annual-meeting" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-30">April 30, 2025</time></div>
@@ -5332,7 +5403,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-drug-discovery-chemistry-2025" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-17">April 17, 2025</time></div>
@@ -5589,7 +5660,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">The FAST Clinic: ensuring Bronx patients with lung nodules receive follow-up care</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">Since 2022, Montefiore Einstein's Follow-Up Assessment of Lung Nodules (FAST) Clinic has driven earlier lung-cancer detection — with stage-1 diagnoses rising from 25.7% to 31.5%.</p>
         <p class="mt-4 text-sm text-ink-soft">May 22, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover  bg-center pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div><figcaption class="mt-2 text-xs italic text-ink-soft">Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5647,7 +5718,7 @@ html{scroll-behavior:smooth}
         <h1 class="font-serif text-3xl font-bold leading-tight text-monte-navy md:text-h1">MECCC welcomes a new cohort of Bronx Oncology Living Daily (BOLD) interns</h1>
         <p class="mt-3 text-lg leading-relaxed text-ink-soft">Seven undergraduate, postgraduate, and gap-year students join a competitive one-year program in patient navigation, community outreach, and research.</p>
         <p class="mt-4 text-sm text-ink-soft">May 25, 2025</p>
-        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover bg-center pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div><figcaption class="mt-2 text-xs italic text-ink-soft">A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster.</figcaption></figure>
+        <figure class="my-6"><div class="aspect-[16/9] w-full rounded-card bg-cover  bg-center pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div><figcaption class="mt-2 text-xs italic text-ink-soft">A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster.</figcaption></figure>
       </div>
 
       <div class="reading mx-auto">
@@ -5803,11 +5874,11 @@ html{scroll-behavior:smooth}
 <section id="r-home" class="route">
     
   <section class="border-b border-line-soft bg-white">
-    <div class="shell py-10 text-center md:py-14">
-      <p class="text-[0.68rem] font-bold uppercase tracking-[0.22em] text-ink-soft">Montefiore Einstein Comprehensive Cancer Center</p>
-      <h1 class="mt-3 font-serif text-5xl font-bold tracking-tight text-monte-navy md:text-6xl">MECCC Insider</h1>
-      <p class="mx-auto mt-3 max-w-2xl text-lg text-ink-soft">Highlights of science, medicine, and community from an NCI-designated comprehensive cancer center</p>
-      <div class="mt-6 flex flex-wrap items-center justify-center gap-x-5 gap-y-3">
+    <div class="shell py-16 text-center md:py-24">
+      <p class="text-[0.68rem] font-bold uppercase tracking-[0.24em] text-ink-soft">Montefiore Einstein Comprehensive Cancer Center</p>
+      <h1 class="mt-5 font-serif text-6xl font-normal tracking-tight text-monte-navy md:text-7xl">MECCC Insider</h1>
+      <p class="mx-auto mt-5 max-w-2xl text-xl leading-relaxed text-ink-soft">Highlights of science, medicine, and community from an NCI-designated comprehensive cancer center</p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-x-6 gap-y-3">
         <span class="rounded-full border border-line px-3.5 py-1 text-xs font-bold uppercase tracking-wide text-monte">May 2025 Issue</span>
         <a href="#r-search" class="inline-flex items-center gap-1.5 text-sm font-bold text-monte [&_svg]:h-4 [&_svg]:w-4">All issues <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <img src="data:image/png;base64,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" width="750" height="300" alt="NCI-Designated Comprehensive Cancer Center" class="h-9 w-auto" />
@@ -5815,19 +5886,19 @@ html{scroll-behavior:smooth}
     </div>
   </section>
     
-  <section class="shell pt-12 pb-6">
-    <p class="mb-6 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.14em] text-ink-soft"><span class="h-px w-8 bg-monte"></span>Our top story</p>
-    <div class="grid gap-8 md:grid-cols-2 md:items-center">
+  <section class="shell pt-16 pb-10">
+    <p class="mb-8 flex items-center gap-3 text-sm font-bold uppercase tracking-[0.16em] text-ink-soft"><span class="h-px w-10 bg-monte"></span>Our top story</p>
+    <div class="grid gap-10 md:grid-cols-2 md:items-center lg:gap-14">
       <a href="#r-news-fast-clinic-lung-nodule-follow-up" class="group block overflow-hidden rounded-card bg-tint">
-        <div class="aspect-[4/3] w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.02] pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
+        <div class="aspect-[4/3] w-full bg-cover  transition duration-500 group-hover:scale-[1.02] bg-center pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
       </a>
       <div>
-        <p class="mb-3"><a href="#r-cat-spotlight" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 3.8-2.5 5-.6.7-.5 1.5-.5 2h-6c0-.5.1-1.3-.5-2C7.5 12.8 6 11.5 6 9a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg><span>Spotlight</span></a></p>
-        <h2 class="font-serif text-3xl font-bold leading-[1.12] text-monte-navy md:text-[2.6rem]">
+        <p class="mb-4"><a href="#r-cat-spotlight" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 3.8-2.5 5-.6.7-.5 1.5-.5 2h-6c0-.5.1-1.3-.5-2C7.5 12.8 6 11.5 6 9a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg><span>Spotlight</span></a></p>
+        <h2 class="font-serif text-4xl font-normal leading-[1.08] text-monte-navy md:text-[3.25rem]">
           <a href="#r-news-fast-clinic-lung-nodule-follow-up" class="text-monte-navy no-underline hover:text-monte">The FAST Clinic: ensuring Bronx patients with lung nodules receive follow-up care</a>
         </h2>
-        <p class="mt-4 text-lg leading-relaxed text-ink-soft">Since 2022, Montefiore Einstein's Follow-Up Assessment of Lung Nodules (FAST) Clinic has driven earlier lung-cancer detection — with stage-1 diagnoses rising from 25.7% to 31.5%.</p>
-        <div class="mt-5 flex items-center gap-4">
+        <p class="mt-6 text-xl leading-relaxed text-ink-soft">Since 2022, Montefiore Einstein's Follow-Up Assessment of Lung Nodules (FAST) Clinic has driven earlier lung-cancer detection — with stage-1 diagnoses rising from 25.7% to 31.5%.</p>
+        <div class="mt-7 flex items-center gap-4">
           <a href="#r-news-fast-clinic-lung-nodule-follow-up" class="inline-flex items-center gap-1.5 text-base font-bold text-monte [&_svg]:h-5 [&_svg]:w-5">Read more <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
           <time class="text-sm text-ink-soft" datetime="2025-05-22">May 22, 2025</time>
         </div>
@@ -5836,16 +5907,16 @@ html{scroll-behavior:smooth}
   </section>
 
     <!-- more in this issue -->
-    <section class="shell py-8" aria-labelledby="issue-h">
+    <section class="shell py-14" aria-labelledby="issue-h">
       <div class="section-head">
         <div><h2 id="issue-h">More in this issue</h2></div>
         <a class="hidden shrink-0 items-center gap-1 pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-search">Browse the archive <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
-      <div class="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         
   <article class="card group">
     <a href="#r-news-multi-omics-exposome-mini-symposium" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-20">May 20, 2025</time></div>
@@ -5856,7 +5927,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-steidl-horwitz-faculty-prize" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-06">May 6, 2025</time></div>
@@ -5867,7 +5938,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-2025-pilot-project-awardees" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-15">May 15, 2025</time></div>
@@ -5881,7 +5952,7 @@ html{scroll-behavior:smooth}
 
     
   <section class="bg-monte text-white" aria-labelledby="facts-h">
-    <div class="shell py-10">
+    <div class="shell py-14">
       <h2 id="facts-h" class="text-center text-white text-h2 font-bold">MECCC by the Numbers</h2>
       <dl class="mt-8 grid grid-cols-2 gap-6 md:grid-cols-4">
         
@@ -5906,7 +5977,7 @@ html{scroll-behavior:smooth}
   </section>
 
     <!-- Ask MECCC — quiet editorial band -->
-    <section class="shell py-8">
+    <section class="shell py-12">
       <div class="flex flex-col items-start justify-between gap-4 border-y border-line-soft py-6 sm:flex-row sm:items-center">
         <div>
           <p class="flex items-center gap-1.5 text-[0.72rem] font-bold uppercase tracking-[0.14em] text-monte [&_svg]:h-4 [&_svg]:w-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15l.7 2 2 .7-2 .7-.7 2-.7-2-2-.7 2-.7z"/></svg>Ask MECCC · AI search</p>
@@ -5917,7 +5988,7 @@ html{scroll-behavior:smooth}
     </section>
 
     <!-- topic rows, masthead order -->
-    <section class="shell py-10" aria-labelledby="sec-director-welcome">
+    <section class="shell py-14" aria-labelledby="sec-director-welcome">
     <span id="sec-director-welcome" class="sr-only">Director Welcome</span>
     
   <div class="section-head">
@@ -5927,14 +5998,14 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-director-welcome">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
     <article class="card group border-t-[3px] border-t-monte p-5">
       <div class="flex items-center justify-between"><a href="#r-cat-director-welcome" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="9" cy="7" r="3"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Director Welcome</span></a><time class="text-xs text-ink-soft" datetime="2025-05-27">May 27, 2025</time></div>
       <div class="mt-2"><h3 class="card-title "><a href="#r-news-director-welcome-may-2025" >A Welcome from the MECCC Director</a><span class="ml-2 rounded bg-warn/10 px-1.5 py-0.5 text-[0.65rem] font-bold uppercase tracking-wide text-warn ring-1 ring-warn/40">Draft</span></h3></div>
       <div class="mt-2"><p class="text-sm leading-relaxed text-ink-soft line-clamp-3">Draft — pending Dr. Steidl. Placeholder copy shown for layout only.</p></div>
       <div class="mt-auto pt-2"><span class="inline-flex items-center gap-1 text-sm font-bold text-monte">Read more <span class="[&_svg]:h-4 [&_svg]:w-4 transition group-hover:translate-x-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></div>
     </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-meccc-news">
+  </section><section class="shell py-14" aria-labelledby="sec-meccc-news">
     <span id="sec-meccc-news" class="sr-only">MECCC News</span>
     
   <div class="section-head">
@@ -5944,11 +6015,11 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-meccc-news">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-6 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-6 lg:grid-cols-3">
       <div class="lg:col-span-2">
   <article class="card group">
     <a href="#r-news-multi-omics-exposome-mini-symposium" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg0" role="img" aria-label="H. Dean Hosgood, PhD, MPH — Co-Leader of MECCC's Cancer Epidemiology, Prevention &amp; Control Program, who convened the symposium."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-meccc-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h13v16H6a2 2 0 0 1-2-2z"/><path d="M17 8h3v10a2 2 0 0 1-2 2"/><path d="M8 8h5M8 12h5M8 16h3"/></svg><span>MECCC News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-20">May 20, 2025</time></div>
@@ -5964,7 +6035,7 @@ html{scroll-behavior:smooth}
         </ul>
       </div>
     </div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-honors-awards">
+  </section><section class="shell py-14" aria-labelledby="sec-honors-awards">
     <span id="sec-honors-awards" class="sr-only">Honors, Awards &amp; Achievements</span>
     
   <div class="section-head">
@@ -5974,10 +6045,10 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-honors-awards">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-2025-pilot-project-awardees" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg2" role="img" aria-label="Richard S. Ha, MD — among the 2025 MECCC Pilot Project awardees."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-15">May 15, 2025</time></div>
@@ -5988,7 +6059,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-steidl-horwitz-faculty-prize" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg3" role="img" aria-label="Ulrich G. Steidl, MD, PhD (left), Deputy Director of MECCC and Co-Director of the Blood Cancer Institute."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-06">May 6, 2025</time></div>
@@ -5999,7 +6070,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aguirre-ghiso-cancer-warrior-award" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg4" role="img" aria-label="Julio A. Aguirre-Ghiso, PhD, Director of MECCC's Cancer Dormancy Institute and Co-Leader of the Tumor Microenvironment &amp; Metastasis Program."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-honors-awards" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M9 13.5 8 21l4-2 4 2-1-7.5"/></svg><span>Honors, Awards &amp; Achievements</span></a><time class="text-xs text-ink-soft" datetime="2025-05-02">May 2, 2025</time></div>
@@ -6008,7 +6079,7 @@ html{scroll-behavior:smooth}
       <div class="mt-auto pt-2"><span class="inline-flex items-center gap-1 text-sm font-bold text-monte">Read more <span class="[&_svg]:h-4 [&_svg]:w-4 transition group-hover:translate-x-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></div>
     </div>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-conference-news">
+  </section><section class="shell py-14" aria-labelledby="sec-conference-news">
     <span id="sec-conference-news" class="sr-only">Conference News</span>
     
   <div class="section-head">
@@ -6018,10 +6089,10 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-conference-news">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-asbrs-2025-breast-surgery" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg5" role="img" aria-label="Sheldon M. Feldman, MD, Chief of Breast Surgery and Breast Surgical Oncology at Montefiore Einstein."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-05-04">May 4, 2025</time></div>
@@ -6032,7 +6103,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-aacr-2025-annual-meeting" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg6" role="img" aria-label="Simo Du, MD, MHS — her AACR poster on cancer-related fatigue and quality of life was selected for a press release."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-30">April 30, 2025</time></div>
@@ -6043,7 +6114,7 @@ html{scroll-behavior:smooth}
   </article>
   <article class="card group">
     <a href="#r-news-drug-discovery-chemistry-2025" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover bg-top transition duration-500 group-hover:scale-[1.03] pbg7" role="img" aria-label="Evripidis Gavathiotis, PhD — Co-Leader of MECCC's Cancer Therapeutics Research Program, who presented on allosteric drug discovery."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-conference-news" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v6M6 9h12M8 9l-2 12M16 9l2 12M9 21h6"/></svg><span>Conference News</span></a><time class="text-xs text-ink-soft" datetime="2025-04-17">April 17, 2025</time></div>
@@ -6052,7 +6123,7 @@ html{scroll-behavior:smooth}
       <div class="mt-auto pt-2"><span class="inline-flex items-center gap-1 text-sm font-bold text-monte">Read more <span class="[&_svg]:h-4 [&_svg]:w-4 transition group-hover:translate-x-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></div>
     </div>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-clinical-trial-updates">
+  </section><section class="shell py-14" aria-labelledby="sec-clinical-trial-updates">
     <span id="sec-clinical-trial-updates" class="sr-only">Clinical Trial Updates</span>
     
   <div class="section-head">
@@ -6062,7 +6133,7 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-clinical-trial-updates">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 md:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 md:grid-cols-3">
   <article class="card p-5">
     <div class="flex items-center justify-between gap-2">
       <a href="#r-cat-clinical-trial-updates" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6M10 3v5l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/><path d="M7 15h10"/></svg><span>Clinical Trial Updates</span></a>
@@ -6106,7 +6177,7 @@ html{scroll-behavior:smooth}
     <a class="btn-ghost mt-4 w-full" href="https://montefioreeinstein.org/research/clinical-trials/study/NCT06623422" target="_blank" rel="noopener noreferrer">Eligibility &amp; details <span class="[&_svg]:h-4 [&_svg]:w-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg></span></a>
   </article></div>
       <p class="mt-4 text-sm text-ink-soft">Snapshot of the most recently opened trials. <a class="font-semibold" href="https://montefioreeinstein.org/research/clinical-trials" target="_blank" rel="noopener noreferrer">Browse all 300+ open trials</a> or email <a href="mailto:mmc-cancerclinicaltrialsreferrals@montefiore.org">referrals</a>.</p></div>
-  </section><section class="shell py-10" aria-labelledby="sec-funding-opportunities">
+  </section><section class="shell py-14" aria-labelledby="sec-funding-opportunities">
     <span id="sec-funding-opportunities" class="sr-only">Funding Opportunities</span>
     
   <div class="section-head">
@@ -6116,7 +6187,7 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-funding-opportunities">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 md:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 md:grid-cols-3">
   <article class="card p-5">
     <a href="#r-cat-funding-opportunities" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5a2.5 2 0 0 1 5 0c0 2.5-5 1.5-5 4a2.5 2 0 0 0 5 0"/></svg><span>Funding Opportunities</span></a>
     <h3 class="card-title mt-2 text-[1.1rem]"><a href="#r-news-funding-wes-leukemia-grant">WES (When Everyone Survives) Foundation Leukemia Research Grant</a></h3>
@@ -6150,7 +6221,7 @@ html{scroll-behavior:smooth}
     </dl>
     <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-monte" href="#r-news-funding-damon-runyon-rachleff-innovation">Details <span class="[&_svg]:h-4 [&_svg]:w-4"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-spotlight">
+  </section><section class="shell py-14" aria-labelledby="sec-spotlight">
     <span id="sec-spotlight" class="sr-only">Spotlight</span>
     
   <div class="section-head">
@@ -6160,10 +6231,10 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-spotlight">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-fast-clinic-lung-nodule-follow-up" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg9" role="img" aria-label="Montefiore Einstein thoracic surgeons operating the robotic surgical system used for minimally invasive lung procedures."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-spotlight" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 1 6 6c0 2.5-1.5 3.8-2.5 5-.6.7-.5 1.5-.5 2h-6c0-.5.1-1.3-.5-2C7.5 12.8 6 11.5 6 9a6 6 0 0 1 6-6z"/><path d="M9 21h6"/></svg><span>Spotlight</span></a><time class="text-xs text-ink-soft" datetime="2025-05-22">May 22, 2025</time></div>
@@ -6172,7 +6243,7 @@ html{scroll-behavior:smooth}
       <div class="mt-auto pt-2"><span class="inline-flex items-center gap-1 text-sm font-bold text-monte">Read more <span class="[&_svg]:h-4 [&_svg]:w-4 transition group-hover:translate-x-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></div>
     </div>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-recent-publications">
+  </section><section class="shell py-14" aria-labelledby="sec-recent-publications">
     <span id="sec-recent-publications" class="sr-only">Recent Publications</span>
     
   <div class="section-head">
@@ -6182,7 +6253,7 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-recent-publications">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><ul class="mt-1">
+    <div class="mt-8"><ul class="mt-1">
   <li class="border-b border-line-soft py-4">
     <p class="text-[0.95rem] leading-relaxed text-ink"><span class="text-ink-soft">DiNardo CD, Jen WY, Takahashi K, Konopleva MY, Kantarjian HM.</span> <a class="font-semibold text-monte-navy hover:text-monte" href="https://pubmed.ncbi.nlm.nih.gov/40000842/" target="_blank" rel="noopener noreferrer">Long-term results of venetoclax combined with FLAG-IDA induction and consolidation for newly diagnosed and relapsed or refractory acute myeloid leukemia.</a></p>
     <p class="mt-1 flex flex-wrap items-center gap-x-2 text-sm text-ink-soft"><em>Leukemia. 2025 Apr;39(4):854-863.</em><a class="inline-flex items-center gap-1 font-semibold text-monte [&_svg]:h-3.5 [&_svg]:w-3.5" href="https://pubmed.ncbi.nlm.nih.gov/40000842/" target="_blank" rel="noopener noreferrer">PubMed <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg></a></p>
@@ -6208,7 +6279,7 @@ html{scroll-behavior:smooth}
     <p class="mt-1 flex flex-wrap items-center gap-x-2 text-sm text-ink-soft"><em>Am J Hematol. 2025 Apr;100(4):740-743.</em><a class="inline-flex items-center gap-1 font-semibold text-monte [&_svg]:h-3.5 [&_svg]:w-3.5" href="https://pubmed.ncbi.nlm.nih.gov/39873236/" target="_blank" rel="noopener noreferrer">PubMed <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v4a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4"/></svg></a></p>
   </li></ul>
       <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-monte [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-recent-publications">See all 21 publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
-  </section><section class="shell py-10" aria-labelledby="sec-upcoming-events">
+  </section><section class="shell py-14" aria-labelledby="sec-upcoming-events">
     <span id="sec-upcoming-events" class="sr-only">Upcoming Events</span>
     
   <div class="section-head">
@@ -6218,7 +6289,7 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-upcoming-events">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 md:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 md:grid-cols-3">
   <article class="card flex-row items-stretch p-0">
     <div class="flex w-20 shrink-0 flex-col items-center justify-center bg-monte text-white">
       <span class="text-xs font-bold uppercase tracking-wide">Jun</span>
@@ -6273,7 +6344,7 @@ html{scroll-behavior:smooth}
       </ul>
     </div>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-in-our-community">
+  </section><section class="shell py-14" aria-labelledby="sec-in-our-community">
     <span id="sec-in-our-community" class="sr-only">In Our Community</span>
     
   <div class="section-head">
@@ -6283,10 +6354,10 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-in-our-community">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
   <article class="card group">
     <a href="#r-news-bold-interns-2025-cohort" class="card-media"  tabindex="-1" aria-hidden="true">
-      <div class="absolute inset-0 h-full w-full bg-cover bg-center transition duration-500 group-hover:scale-[1.03] pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div>
+      <div class="absolute inset-0 h-full w-full bg-cover  transition duration-500 group-hover:scale-[1.03] bg-center pbg10" role="img" aria-label="A Bronx Oncology Living Daily (BOLD) intern presents a community cancer-screening research poster."></div>
     </a>
     <div class="flex flex-1 flex-col gap-2 p-4">
       <div class="flex items-center justify-between"><a href="#r-cat-in-our-community" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 20v-1a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v1M14 20v-1a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v1"/></svg><span>In Our Community</span></a><time class="text-xs text-ink-soft" datetime="2025-05-25">May 25, 2025</time></div>
@@ -6295,7 +6366,7 @@ html{scroll-behavior:smooth}
       <div class="mt-auto pt-2"><span class="inline-flex items-center gap-1 text-sm font-bold text-monte">Read more <span class="[&_svg]:h-4 [&_svg]:w-4 transition group-hover:translate-x-0.5"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span></div>
     </div>
   </article></div></div>
-  </section><section class="shell py-10" aria-labelledby="sec-professional-development">
+  </section><section class="shell py-14" aria-labelledby="sec-professional-development">
     <span id="sec-professional-development" class="sr-only">Professional Development</span>
     
   <div class="section-head">
@@ -6305,7 +6376,7 @@ html{scroll-behavior:smooth}
     </div>
     <a class="hidden shrink-0 items-center gap-1 whitespace-nowrap pb-1 text-sm font-bold text-monte sm:inline-flex [&_svg]:h-4 [&_svg]:w-4" href="#r-cat-professional-development">See all <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
-    <div class="mt-6"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+    <div class="mt-8"><div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
     <article class="card group border-t-[3px] border-t-monte p-5">
       <div class="flex items-center justify-between"><a href="#r-cat-professional-development" class="cat-label hover:underline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4 2 9l10 5 10-5z"/><path d="M6 11v5c0 1 3 3 6 3s6-2 6-3v-5"/></svg><span>Professional Development</span></a><time class="text-xs text-ink-soft" datetime="2025-09-05">September 5, 2025</time></div>
       <div class="mt-2"><h3 class="card-title "><a href="#r-news-cme-ovarian-cancer-screening-management" >CME: “Updates in Screening/Management of Ovarian Cancer”</a></h3></div>
