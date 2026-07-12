@@ -1965,6 +1965,10 @@ a {
    * equivalent used by the single-file bundle (which renders photos as CSS bgs).
    */
 
+.face-crop-bg {
+  background-position: 50% 28%;
+}
+
 /* Eyebrow / NCI badge chip */
 
 .nci-badge {
@@ -2499,10 +2503,6 @@ a {
 
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-cols-\[1fr_auto_1fr\] {
-  grid-template-columns: 1fr auto 1fr;
 }
 
 .flex-row {
@@ -3166,10 +3166,6 @@ a {
   font-size: 0.66rem;
 }
 
-.text-\[0\.68rem\] {
-  font-size: 0.68rem;
-}
-
 .text-\[0\.72rem\] {
   font-size: 0.72rem;
 }
@@ -3632,20 +3628,12 @@ a {
 }
 
 @media (min-width: 640px) {
-  .sm\:block {
-    display: block;
-  }
-
   .sm\:inline {
     display: inline;
   }
 
   .sm\:inline-flex {
     display: inline-flex;
-  }
-
-  .sm\:h-12 {
-    height: 3rem;
   }
 
   .sm\:h-14 {
@@ -3735,10 +3723,6 @@ a {
 @media (min-width: 1024px) {
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
-  }
-
-  .lg\:block {
-    display: block;
   }
 
   .lg\:inline {
@@ -3833,6 +3817,21 @@ html{scroll-behavior:smooth}
   <a href="#main" class="skip-link">Skip to main content</a>
   <input type="checkbox" id="nav-drawer" class="peer sr-only" aria-label="Open menu" />
   <header class="bg-white">
+    <!-- top utility bar — matches ME Update: light-gray strip, institution links left · utilities right (no centered wordmark) -->
+    <div class="border-b border-line-soft bg-[#f8f8f8]">
+      <div class="shell flex items-center justify-between gap-4 py-2.5 text-sm text-ink-soft">
+        <nav aria-label="Montefiore Einstein network" class="flex items-center gap-4 overflow-x-auto">
+          <a href="https://montefioreeinstein.org" class="whitespace-nowrap text-ink-soft no-underline hover:text-ink">Montefiore Einstein</a>
+          <a href="https://einsteinmed.edu" class="hidden whitespace-nowrap text-ink-soft no-underline hover:text-ink sm:inline">Albert Einstein College of Medicine</a>
+          <a href="https://www.cham.org" class="hidden whitespace-nowrap text-ink-soft no-underline hover:text-ink lg:inline">Children's Hospital</a>
+        </nav>
+        <nav aria-label="Montefiore Einstein utilities" class="flex items-center justify-end gap-4 overflow-x-auto whitespace-nowrap">
+          <a href="https://montefioreeinstein.org" class="hidden text-ink-soft no-underline hover:text-ink sm:inline">Find a Doctor</a>
+          <a href="https://montefioreeinstein.org" class="hidden text-ink-soft no-underline hover:text-ink md:inline">Clinical Services</a>
+          <a href="https://montefioreeinstein.org" class="text-ink-soft no-underline hover:text-ink">Donate</a>
+        </nav>
+      </div>
+    </div>
     <!-- header/nav row: hamburger + identity (left) · section nav · Ask MECCC (right).
          The property logo is dropped here — it lives in the NCI lockup on the masthead. -->
     <div class="border-b border-line-soft">
