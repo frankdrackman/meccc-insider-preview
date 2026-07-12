@@ -4049,8 +4049,8 @@ html{scroll-behavior:smooth}
   <meta charset=&quot;utf-8&quot; />
   <meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot; />
   <meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot; />
-  <meta name=&quot;color-scheme&quot; content=&quot;light dark&quot; />
-  <meta name=&quot;supported-color-schemes&quot; content=&quot;light dark&quot; />
+  <meta name=&quot;color-scheme&quot; content=&quot;light&quot; />
+  <meta name=&quot;supported-color-schemes&quot; content=&quot;light&quot; />
   <title>MECCC Insider — May 2025</title>
   <!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-->
   <style>
@@ -4059,13 +4059,8 @@ html{scroll-behavior:smooth}
     table { border-collapse:collapse; }
     img { border:0; outline:none; text-decoration:none; -ms-interpolation-mode:bicubic; }
     a { color:#003769; }
-    @media (prefers-color-scheme: dark) {
-      .bg-body { background:#0b1220 !important; }
-      .bg-card { background:#111a2b !important; }
-      .t-navy, .t-ink { color:#e8eef6 !important; }
-      .t-soft { color:#aab6c6 !important; }
-      .line { border-color:#24314a !important; }
-    }
+    /* Locked to light: white canvas + navy accents in every mode (dark-mode
+       variant intentionally removed per Les — the brand look is the light one). */
     @media screen and (max-width:620px) {
       .container { width:100% !important; }
       .px { padding-left:20px !important; padding-right:20px !important; }
