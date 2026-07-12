@@ -2645,12 +2645,6 @@ a {
   margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
-.space-y-1\.5 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(0.375rem * var(--tw-space-y-reverse));
-}
-
 .space-y-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2676,6 +2670,10 @@ a {
 
 .self-center {
   align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-hidden {
@@ -2791,6 +2789,11 @@ a {
 .border-t-monte {
   --tw-border-opacity: 1;
   border-top-color: rgb(0 55 105 / var(--tw-border-opacity, 1));
+}
+
+.bg-\[\#f8f8f8\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 248 248 / var(--tw-bg-opacity, 1));
 }
 
 .bg-line {
@@ -3550,6 +3553,11 @@ a {
   background-color: rgb(246 249 252 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:text-ink:hover {
+  --tw-text-opacity: 1;
+  color: rgb(36 36 36 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-monte:hover {
   --tw-text-opacity: 1;
   color: rgb(0 55 105 / var(--tw-text-opacity, 1));
@@ -3713,6 +3721,14 @@ a {
     grid-column: span 2 / span 2;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:inline {
+    display: inline;
+  }
+
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3797,19 +3813,20 @@ html{scroll-behavior:smooth}
   <a href="#main" class="skip-link">Skip to main content</a>
   <input type="checkbox" id="nav-drawer" class="peer sr-only" aria-label="Open menu" />
   <header class="bg-white">
-    <!-- utility bar (institution tabs + utility links) -->
-    <div class="bg-monte text-white">
-      <div class="shell flex h-9 items-center justify-between gap-4 text-xs">
+    <!-- top utility bar — matches ME Update: light-gray strip, institution links left · centered Montefiore Einstein · utilities right -->
+    <div class="border-b border-line-soft bg-[#f8f8f8]">
+      <div class="shell grid grid-cols-[1fr_auto_1fr] items-center gap-4 py-2.5 text-sm text-ink-soft">
         <nav aria-label="Montefiore Einstein network" class="flex items-center gap-4 overflow-x-auto">
-          <a href="https://montefioreeinstein.org" class="whitespace-nowrap font-semibold text-white no-underline">Patient Care</a>
-          <a href="https://einsteinmed.edu" class="hidden whitespace-nowrap text-white/80 no-underline hover:text-white sm:inline">Albert Einstein College of Medicine</a>
-          <a href="https://www.cham.org" class="hidden whitespace-nowrap text-white/80 no-underline hover:text-white md:inline">Children's Hospital</a>
+          <a href="https://montefioreeinstein.org" class="whitespace-nowrap text-ink-soft no-underline hover:text-ink">Montefiore Einstein</a>
+          <a href="https://einsteinmed.edu" class="hidden whitespace-nowrap text-ink-soft no-underline hover:text-ink sm:inline">Albert Einstein College of Medicine</a>
+          <a href="https://www.cham.org" class="hidden whitespace-nowrap text-ink-soft no-underline hover:text-ink lg:inline">Children's Hospital</a>
         </nav>
-        <div class="flex items-center gap-3 whitespace-nowrap">
-          <a href="https://montefioreeinstein.org" class="hidden text-white/80 no-underline hover:text-white md:inline">For Professionals</a>
-          <span class="font-semibold text-white">News</span>
-          <span class="rounded bg-white/15 px-1.5 py-0.5 text-white">EN</span><span class="text-white/50">ES</span>
-        </div>
+        <a href="https://montefioreeinstein.org" class="hidden justify-self-center whitespace-nowrap font-serif text-lg text-monte-navy no-underline lg:block">Montefiore Einstein</a>
+        <nav aria-label="Montefiore Einstein utilities" class="flex items-center justify-end gap-4 overflow-x-auto whitespace-nowrap">
+          <a href="https://montefioreeinstein.org" class="hidden text-ink-soft no-underline hover:text-ink sm:inline">Find a Doctor</a>
+          <a href="https://montefioreeinstein.org" class="hidden text-ink-soft no-underline hover:text-ink md:inline">Clinical Services</a>
+          <a href="https://montefioreeinstein.org" class="text-ink-soft no-underline hover:text-ink">Donate</a>
+        </nav>
       </div>
     </div>
     <!-- main header: hamburger · centered logo · actions -->
@@ -3831,7 +3848,7 @@ html{scroll-behavior:smooth}
       <div class="shell flex items-center justify-between gap-4 py-2.5">
         <a href="#r-home" class="shrink-0 leading-tight no-underline">
           <span class="block text-[0.68rem] uppercase tracking-wide text-ink-soft">Montefiore Einstein</span>
-          <span class="block font-serif text-lg text-monte-navy">Cancer News</span>
+          <span class="block font-serif text-lg text-monte-navy">MECCC Insider</span>
         </a>
         <div class="flex items-center gap-1 overflow-x-auto">
           <a href="#r-home" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">News</a><a href="#r-cat-meccc-news" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">Research</a><a href="#r-cat-clinical-trial-updates" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">Clinical Trials</a><a href="#r-cat-upcoming-events" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">Education</a><a href="#r-cat-spotlight" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">Community</a><a href="#r-cat-director-welcome" class="whitespace-nowrap px-3.5 py-2 text-sm font-normal text-ink hover:text-monte">About</a>
