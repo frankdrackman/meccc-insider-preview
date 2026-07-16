@@ -3820,6 +3820,10 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:grid-cols-\[calc\(\(100\%-2\.5rem\)\/3\)_1fr\] {
+    grid-template-columns: calc((100% - 2.5rem) / 3) 1fr;
+  }
+
   .lg\:gap-14 {
     gap: 3.5rem;
   }
@@ -6587,7 +6591,7 @@ html{scroll-behavior:smooth}
   </section>
   <section class="shell -mt-8 pb-14" aria-labelledby="ask-uli-h">
     <div class="overflow-hidden rounded-card border border-line-soft shadow-card">
-      <div class="grid md:grid-cols-[19rem_1fr]">
+      <div class="grid lg:grid-cols-[calc((100%-2.5rem)/3)_1fr]">
         <!-- identity + CTA — content vertically centered within the navy panel -->
         <div class="flex flex-col justify-center bg-monte-footer p-6 text-white">
           <h2 id="ask-uli-h" class="font-serif text-3xl leading-none text-white">Ask Uli</h2>
